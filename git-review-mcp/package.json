@@ -1,0 +1,46 @@
+{
+  "name": "@danielevilela/git-review-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for AI-powered code review — post inline comments on GitLab MRs and GitHub PRs",
+  "type": "module",
+  "bin": {
+    "git-review-mcp": "./dist/index.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "gitlab",
+    "github",
+    "code-review",
+    "model-context-protocol",
+    "ai",
+    "copilot",
+    "claude"
+  ],
+  "author": "danielevilela",
+  "license": "MIT",
+  "homepage": "https://github.com/danielevilela/ai/tree/master/git-review-mcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielevilela/ai.git",
+    "directory": "git-review-mcp"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "dotenv": "^17.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "typescript": "^5.0.0"
+  }
+}
