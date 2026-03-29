@@ -1,0 +1,42 @@
+{
+  "name": "@danielevilela/jira-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Jira — search, create, comment, transition, and update issues from any AI assistant",
+  "type": "module",
+  "bin": {
+    "jira-mcp": "./dist/index.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "jira",
+    "model-context-protocol",
+    "ai",
+    "copilot",
+    "claude"
+  ],
+  "author": "danielevilela",
+  "license": "MIT",
+  "homepage": "https://github.com/danielevilela/ai/tree/main/jira-mcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielevilela/ai.git",
+    "directory": "jira-mcp"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
