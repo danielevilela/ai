@@ -140,6 +140,18 @@ Once connected, you can ask your AI assistant things like:
 
 ---
 
+## Privacy & Data Storage
+
+This MCP server is **completely stateless** — it stores nothing. Every tool call makes a live request directly to your Jira instance and returns the result to the AI. No ticket data, credentials, or history is written to disk or cached anywhere.
+
+```
+AI assistant → MCP tool call → Jira REST API → response back to AI
+```
+
+Your `JIRA_PAT` is passed only as an environment variable and is never logged or transmitted anywhere other than the Jira API.
+
+---
+
 ## License
 
 MIT

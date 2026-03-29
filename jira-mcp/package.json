@@ -1,6 +1,6 @@
 {
   "name": "@danielevilela/jira-mcp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "MCP server for Jira — search, create, comment, transition, and update issues from any AI assistant",
   "type": "module",
   "bin": {
