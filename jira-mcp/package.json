@@ -1,6 +1,6 @@
 {
   "name": "@danielevilela/jira-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for Jira — search, create, comment, transition, and update issues from any AI assistant",
   "type": "module",
   "bin": {
@@ -27,7 +27,7 @@
   ],
   "author": "danielevilela",
   "license": "MIT",
-  "homepage": "https://github.com/danielevilela/ai/tree/main/jira-mcp",
+  "homepage": "https://github.com/danielevilela/ai/tree/master/jira-mcp",
   "repository": {
     "type": "git",
     "url": "https://github.com/danielevilela/ai.git",
@@ -37,6 +37,7 @@
     "@modelcontextprotocol/sdk": "^1.0.0"
   },
   "devDependencies": {
+    "@types/node": "^25.5.0",
     "typescript": "^5.0.0"
   }
 }
